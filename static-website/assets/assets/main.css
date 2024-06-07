@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background: #00796b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    background: #4db6ac;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    background-color: #b2dfdb;
+}
+
+h2 {
+    color: #004d40;
+}
+
+.destination {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+.destination h3 {
+    padding: 10px 0;
+    color: #00796b;
+}
+
+.destination p {
+    padding: 0 10px 20px;
+    color: #666;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background: #00796b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
